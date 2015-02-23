@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <style>
+      .reveal section img { background: white; }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal"><div class="slides">
+
+<section data-markdown><script type="text/template">
+###  Interoperability
+---
+
+> Interoperability is the ability of making systems and organizations work together (inter-operate)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Types of Interoperability
+---
+* Syntactic (formats & protocols)
+* Semantic (reference model)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Interoperability
+---
+* formats
+* protocols
+* reference model
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+### post-facto interop
+---
+one vendor
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Open Standards
+---
+#### ab-initio interop
+
+SQL, HTTP, TCP, HTML etc
+</script></section>
+
+<section data-markdown><script type="text/template">
+### History
+----
+
+* HL7 v2
+* DICOM
+* HL7 v3
+* CDA
+* OpenEHR
+* FHIR
+</script></section>
+
+<section data-markdown><script type="text/template">
+### 1984 UCSF
+---
+
+American Society of Testing and Materials
+invited the taskforce to organize as a formal subcommittee
+
+---
+E31.11 Standard influenced by [X12 EDI](https://msdn.microsoft.com/en-us/library/cc973915.aspx)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### 1984 UCSF
+---
+![history/hl7v2.png](http://www.ringholm.de/images/example_labresult_ASTM_E31_McD84.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+> We struggled with understanding higher level protocols,
+> and typically adapted magnetic tape interchange formats,
+> treating the network as an efficient way of exchanging virtual magnetic tapes
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### 1985
+
+Simborg Systems share StatLAN protocol (based on UCSF)
+
+![history/ucsf.png](history/ucsf.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### 1987 HL7v1
+---
+### 1988 HL7v2
+---
+![history/adt.png](history/adt.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### HL7 v2
+---
+
+* messages
+* segments & segment groups
+* fields
+* datatypes and tables
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### HL7 v2
+----
++ practical
+- no clear reference model
+- no extensibility (z-segments)
+- archaic format
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## HL7 v3 (1992)
+----
+* HDF metodology
+* RIM reference information model
+* New technologies: UML, Model Driven, OOP, XML
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Era of UML
+---
+![](history/uml.jpg)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### HDF
+
+![hdf.gif](history/hdf.gif)
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+* Requirements Analysis
+  * Use Cases (UCM)
+  * Information Analysis (RIM)
+* Solution Design
+  * Interaction design (IM)
+  * Message design (HMD)
+  * Message specs (ITS)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Reference Information Model
+----
+![rim-core.png](history/rim-core.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Reference Information Model
+----
+![rim.png](history/rim.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### CMET & D-MIM
+---
+![rim.png](history/dmim.gif)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Design by constraint
+---
+![rim-design.png](history/rim-design.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### [CDA](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7)
+----
+Clinical Document Architecture
+
+1. Persistence
+2. Stewardship
+3. Authentication
+4. Context
+5. Wholeness
+6. Readability
+</script></section>
+
+<section data-markdown><script type="text/template">
+### CDA levels
+---
+![cda.png](history/cda.png)
+</script></section>
+
+
+<section data-markdown><script type="text/template">
+### Continuity of Care Document [hl7](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=6)
+
+![ccd.png](history/ccd.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### IHE XDS
+----
+![xds](history/xds.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+  #### Events & Messages
+  ----
+  #### Documents
+  ----
+  #### ????
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ### REST
+  ----
+  Representational State Transfer
+  architectural style
+
+  ----
+  [Roy Thomas Fielding](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ### Resource
+  ----
+  * has identifier - URI
+  * has representations (separation)
+  * manipulated by uniform interface
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ### Compare with RPC
+  ----
+  * Things vs actions
+  * Nouns vs Verbs
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Representation
+----
+Format negotiation JSON, XML, csv
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Uniform Interface
+----
+* URIs
+* VERBs:  GET, POST, PUT & DELETE (OPTION, PATCH)
+* Response: [status codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes), body
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Constraints
+----
+* Client-Server
+* Stateless
+* Cacheable
+* Code On Demand
+* Uniform Interface
+* Hypermedia as the engine of application state
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Hypermedia driven
+---
+http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ### Semantic WEB
+  ----
+  ![](history/semantic.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+### FHIR
+----
+* RESTful
+* focus on implementation
+* 80% rule
+</script></section>
+
+<section data-markdown><script type="text/template">
+</script></section>
+
+<section data-markdown><script type="text/template">
+</script></section>
+
+<section data-markdown><script type="text/template">
+</script></section>
+
+    </div></div>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+
+  </script>
+
+</body>
+              </html>
